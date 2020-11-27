@@ -1,0 +1,96 @@
+main.page-contact {
+    padding-top: 40px;
+
+    article.type-page.page header {
+
+        float: left;
+            width: 58%;
+
+            div.div-contact-text {
+                background-color: white;
+                font-size: 1rem;
+                p {
+                    text-align: justify;
+                    color: darkgreen;
+                }
+            }
+    }
+   
+    form.wpcf7-form {
+        input[type="text"], input[type='email'] {
+            border: none;
+            border-bottom: 1px solid lightgrey;
+        } 
+
+        input[type="text"]:focus, input[type='email']:focus {
+            outline: 0;
+            border: none;
+            border-bottom: 2px solid darkgray;
+        } 
+
+        label {
+            width: 100%;
+        }
+    }
+}
+
+main.page-contact {
+    article.type-page.page {
+        
+        div.contact-details-one {
+            width: 100%;
+            background-color: rgba(#000000, 0.9);
+            top: 64px;
+            color: wheat;
+            h4 {
+                text-align: center;
+            }
+            span {
+                display: block;
+                text-align: justify;
+            }
+            display: none;
+            transition: 2s;
+        }
+
+        div.contact-details-two {
+            position: sticky;
+            width: 40%;
+            float: right;
+            background-color: rgba(#000000, 0.9);
+            top: 64px;
+            z-index: 5;
+            color: wheat;
+            h4 {
+                text-align: center;
+            }
+            span {
+                display: block;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+
+    main.page-contact {
+        article.type-page.page {
+            header {
+                float: left;
+                width: 100%;
+                p {
+                    text-align: justify;
+                }
+            }
+            div.contact-details-one {
+                display: block;
+            }
+            div.contact-details-two {
+                display: none;
+            }
+        }
+    }
+}
+

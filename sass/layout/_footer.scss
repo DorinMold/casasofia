@@ -1,0 +1,158 @@
+// div.site-info {
+// 	div#container-footer {
+// 		font-size: 12px;
+// 		text-transform: uppercase;
+// 		//height: 336px;
+// 		padding-bottom: 10px;
+// 		letter-spacing: 0.2em;
+// 		background-color: #182c61;
+
+// 		& > .container {
+// 			overflow: hidden;
+// 		}
+
+// 		.widget {
+// 			padding: 0;
+// 			margin: 30px 0;
+// 			overflow: hidden;
+// 			ul {
+// 				padding: 0;
+// 				margin: 0;
+// 				width: 100%;
+// 				float: none;
+// 				list-style-type: none;
+// 				text-align: left;
+// 				li {
+// 					a {
+// 						font-size: 8px;
+// 						color: snow;
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.flex_column {
+// 			z-index: 1;
+// 			float: left;
+// 			position: relative;
+// 			min-height: 1px;
+// 			margin-right: 15px;
+		
+// 		}
+
+// 		.flex_column:first-of-type {
+// 			max-width: 25%;
+// 		}
+
+// 		.flex_column:nth-of-type(2) {
+// 			max-width: 20%;
+// 			margin-left: 0;
+// 		}
+
+// 		.flex_column:nth-of-type(3) {
+// 			width: 30%;
+// 			margin-left: 0!important;
+// 			display: flex;
+// 			justify-content: center;
+// 		}
+
+// 		.flex_column:nth-of-type(4) {
+// 			text-align: right;
+// 			margin-left: 0;
+// 			width: 25%;
+// 			float: right;
+// 			ul {
+// 				text-align: right;
+// 			}
+// 		}
+
+// 		.flex_column:before, .flex_column:after, .widget:before, .widget:after {
+// 			content: '\0020';
+// 			display: block;
+// 			overflow: hidden;
+// 			visibility: hidden;
+// 			width: 0;
+// 			height: 0;
+// 		}
+// 		.flex_column:after {
+// 			clear: both;
+// 		}
+// 	}
+
+// 	div#footer-copyright {
+// 		text-align: center;
+// 	}
+// }
+
+div.site-info {
+	background-color: #182c61;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		float: none;
+		list-style-type: none;
+		text-align: left;
+		li {
+			a {
+				color: snow;
+
+			}
+		}
+	}
+
+	div.footer_column {
+		height: 100%;
+		padding: 30px 0;
+		h5 {
+			color: snow;
+			text-align: center;
+			margin-top: 35px;
+		}
+		h6{
+			text-align: left;
+		}
+		div {
+			text-align: center;
+			i.fa-star {
+				color: darkorange;
+				margin-right: 3px;
+			}
+		}
+		
+		ul {
+			li {
+				padding: 4px 0;
+			}
+		}
+
+		&:last-of-type {
+			ul {
+				color: darkorange;
+				text-align: right;
+			}
+		}
+	}
+
+	div#footer-copyright {
+		text-align: center;
+	}
+}
+
+@media screen and(max-width: 576px) {
+	div.site-info {
+		div.footer_column {
+			h5, h6, ul {
+				text-align: center;
+			}
+			&:last-of-type {
+				ul {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

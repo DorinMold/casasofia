@@ -1,0 +1,26 @@
+main.page-pozesplit {
+    margin-top: -520px;
+    h5 {
+        position: relative;
+        top: -250px;
+        color: darkorange;
+    }
+    div.div-poze {
+        text-align: center;
+        h4 {
+            a {
+                color: darkorange;
+                &:hover {
+                    color: darken( darkorange, 10%)!important;
+                }
+            }
+        }
+        img {
+            height: 275px;
+            width: 280px;
+        }
+    }
+    div.sandwich {
+        height: 30px;
+    }
+}

@@ -1,0 +1,260 @@
+.middle-tabs {
+    clear: both;
+    //background: url(assets/poze/black_row_bg.png);
+    padding-top: 110px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 45px;
+    //background-color: rgba(24, 44, 97,1.0);
+    background-image: url('assets/poze/background/vintage.png');
+
+    
+    .tab-content {
+        background:darkcyan;
+        margin-top: 45px;
+        padding: 1.6%;
+        font-size: 15px;
+        position: relative;
+    }
+    .tab-pane {
+        border-bottom: 5px solid #e1e9e9;
+        height: auto;
+    }
+}
+
+.nav-tabs-icons {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 11%;
+
+    & > li {
+        //float: left;
+        text-align: center;
+        //margin: 0 7px;
+        position: relative;
+
+        & > a {
+
+            display: inline-block;
+            width: 140px;
+            height: 140px;
+            border: 3px solid transparent;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            color: #68767f;
+
+            span {
+                display: none;
+                position: absolute;
+                top: -35px;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+                font-size: 17px;
+                text-transform: uppercase;
+            }
+            i {
+                //font-size: 28px;
+                font-size: 60px;
+                line-height: 2.2em;
+                color: darkorange;
+            }
+        }
+    }
+}
+
+.nav-tabs-icons li.active a span {
+    display: inline-block;
+    color: snow;
+}
+
+
+.nav-tabs-icons > li.active > a, .nav-tabs-icons > li.active > a:hover, .nav-tabs-icons > li.active > a:focus {
+    border: 3px solid darkcyan;
+    background: none;
+}
+
+.midtab_left {
+    float: left;
+    //width: calc( 100% - 300px);
+    width: 60%;
+}
+
+.midtab_right {
+    float: right;
+    width: 38%;
+    margin-left: 10px;
+    background: #807b53;
+    color: #fff;
+
+    div.rafting {
+        background-image: url('assets/poze/rafting.jpg');
+        position: relative;
+        &::before {
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+        }
+        strong {
+            color:  darkorange;
+            background-color: black;
+        }
+        span {
+            position: relative;
+        }
+    }
+
+    h3 {
+        text-shadow: 0 1px 0 #2e647d;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: wheat;
+        font-weight: 400;
+        margin-bottom: 25px;
+        text-align: center;
+        padding: 15px 5px;
+        background-color: #008b8b;
+    }
+
+    .midtab_right_title {
+        padding: 20px 25px 0 25px;
+        //min-height: 70px;
+        p.odd-color, span.odd-color {
+            padding: 20px;
+            margin: 10px -25px;
+            background-color: $color__background-odd;
+            color: black;
+        }
+        &:last-of-type {
+            padding: 20px 25px 30px 25px;
+        }
+        ul {
+            margin: 0 0 1.5em 1em;
+        }
+    }
+
+    .midtab_right_title:nth-of-type(2) {
+        padding-top: 0;
+    }
+
+    i.fa:not(.fa-chevron-right) {
+        font-size: 35px;
+        &.fa-sun-o {
+            color: yellow;
+        }
+    }
+
+    .midtab_big_btn {
+        background: #807b53;
+        color: #fff;
+        text-shadow: 0px 0px #36bedc;
+        border: none;
+        display: block;
+        width: 100%;
+        border-top: 0px solid #4facbc;
+        height: 115px;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 38px 25px;
+        position: relative;
+        .icon-greater-than {
+            background: black;
+            width: 30px;
+            height: 30px;
+            margin-right: 7px;
+            display: inline-block;
+            padding: 2px 11px;
+            border-radius: 77%;
+        }
+        
+    }
+}
+
+.midtab_img_left {
+    display: block;
+    width: 100%;
+}
+
+.midtab_info_left {
+    height: 100%!important;
+    background-color: #f7fafc;
+    padding: 30px;
+    h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: darkorange;
+    }
+    div.info_text {
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: darkorange;
+        }
+        p {
+            span {
+                color: darkblue;
+                font-weight: bold;
+            }
+            a {
+                color: #212529;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-tabs-icons > li > a {
+        width: 130px;
+        height: 130px;
+        i {
+            font-size: 55px;
+        }
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    div.midtab_left {
+        width: 59%;
+    }
+    .nav-tabs-icons > li > a {
+        width: 120px;
+        height: 120px;
+        i {
+            font-size: 50px;
+        }
+    } 
+}
+
+@media screen and (max-width: 550px) {
+    div.midtab_left {
+        width: 100%;
+    }
+    div.midtab_right {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    ul.nav-tabs-icons {
+        margin: 0 0 0 6%;
+        & > li {
+            & > a {
+                height: 90px;
+                width: 90px;
+                i {
+                    line-height: 2.1em;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

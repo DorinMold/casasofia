@@ -1,0 +1,22 @@
+main.page-indicatii {
+    padding-top: 40px;
+
+    div {
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.1)
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        span {
+            font-size: 75%;
+        }
+    }
+}

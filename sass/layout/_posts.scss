@@ -1,0 +1,47 @@
+main {
+   section.page-blog {
+        //width: 22rem;
+        img {
+            height: 250px;
+            object-fit: cover;
+        }
+        div.card-body {
+            padding: 15px 10px;
+            h5.card-title {
+                a {
+                    color: darkorange;
+                }
+            }
+            a{
+                text-decoration: none;
+                &.btn {
+                    color: white;
+                }
+            }
+            div.card-title {
+        
+            }
+            p.card-text {
+                font-size: 0.8rem;
+            }
+        }
+   }
+   article.type-post.post {
+    div.post-thumbnail {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        }
+    }
+}
+
+body.single.single-post {
+    div.post-thumbnail {
+        overflow: hidden;
+    }
+    div.entry-content {
+        text-align: justify;
+    }
+}

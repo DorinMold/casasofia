@@ -1,0 +1,29 @@
+a {
+	//color: $color__link;
+
+	&:visited {
+		//color: $color__link-visited;
+	}
+//	&:hover,
+	&:focus,
+	&:active {
+		//color: darken(snow, 0%);
+		color: wheat;
+	}
+	// &:focus {
+	// 	outline: thin dotted;
+	// }
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+a:visited, a:active, a:link {
+    font-family: $font__second;
+    color: #CDB99C;
+}
+
+a:hover {
+    color: lighten(#CDB99C, 20%);
+}

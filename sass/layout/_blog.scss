@@ -1,0 +1,15 @@
+div.nav-previous, div.nav-next {
+    span {
+        width: 95%;
+        display: block;
+        margin-top: 5px;
+        color: #006400;
+        &.post-title {
+            color: #006460;
+            font-weight: bold;
+        }
+        &:hover {
+            color: lighten(#006460, 10%);
+        }
+    } 
+}

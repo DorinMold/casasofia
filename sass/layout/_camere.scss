@@ -1,0 +1,124 @@
+main.page-camere {
+    padding-top: 40px;
+
+    .ngg-gallery-thumbnail a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ngg-galleryoverview {
+        margin-top: 0;
+    }
+
+    div.continut-camere {
+        opacity: 0;
+        transition: 800ms;
+        margin-top: 100px;
+        &.div-camere-vizibil {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+    h2 {
+        text-align: center;
+        color: seagreen;
+		padding: 20px;
+		box-shadow: 0px 1px 10px -5px;
+    }
+
+    h4 {
+        //display: none;
+        color: darkgreen;
+        height: 0;
+        padding: 0!important;
+        overflow: hidden;
+        //height: 140px!important;
+        line-height: 1.5;
+    }
+
+    .camere-lista {
+        display: grid;
+        grid-template-columns: 300px minmax(200px, auto);
+        grid-auto-rows: 320px;
+        grid-column-gap: 10px;
+
+        h6 {
+            position: relative;
+            top: -45px;
+            color: darkgreen;
+            text-align: center;
+        }
+
+        div:not(:first-of-type) {
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 80%;
+                transform: scaleX(0);
+                transform-origin: right;
+                content: ' rezerva 2 camere si ai reducere de 10% ';
+                text-align: center;
+                background-color: gold;
+                transition: all 0.5s;
+                padding: 7px 10px;
+            }
+            &:hover::before {
+                transform: scaleX(1);
+            }
+
+        }
+    
+        div {
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #575555;
+            font-weight: bold;
+            p {
+                text-align: center;
+                span {
+                    color: darkgreen;
+                }
+            }
+           
+            img {
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main.page-camere {
+        .camere-lista {
+            display: block;
+           
+            div {
+                width: 100%;
+                display: block;
+                max-height: 350px;
+                margin-top: 30px;
+
+                p {
+                    margin-top: 30px;
+                }
+                
+                img {
+                    height: auto;
+                    max-height: 350px;
+                }
+            }
+
+            div:not(:first-of-type)::before {
+                width: 100%;
+            }
+        }
+    }
+}

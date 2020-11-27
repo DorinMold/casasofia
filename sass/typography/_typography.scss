@@ -1,0 +1,29 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+body {
+	margin: 0!important;
+	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: wheat!important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@import "headings";
+
+@import "copy";

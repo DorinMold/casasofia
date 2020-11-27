@@ -1,0 +1,132 @@
+main.page-rezervari {
+    article {
+        padding-top: 15px;
+        h3 {
+            text-align: center;
+            background-color: #575555;
+            color: snow;
+        }
+        p#er-rezerv {
+            padding: 20px;
+            background-color : gold;
+            color : red;
+            display: none;
+        }
+    }
+    section.section-rezervare {
+        form {
+            div {
+                padding: 10px;
+
+                &.form-group {
+                    input[type="text"] {
+                        width: 60%;
+                    }
+                }
+               
+                &.row {
+                    div {
+                        text-align: center;
+                    }
+
+                    label {
+                        width: 100%;
+                        input[type="text"], input[type="email"] {
+                            margin-left: 10px;
+                            float: right;
+                        }
+                    }
+                
+                    hr {
+                        margin: 10px 0;
+                    }
+
+                }
+                span:not(.perioade) {
+                    display: inline-block;
+                    width: 30%;
+                    margin-right: 10px;
+                    font-size: 13px;
+                    &:first-of-type {
+                        width: 30%;
+                    }
+                }
+
+                span.first-col {
+                    width: 25%!important;
+                }
+            }
+            div#rezervare1, div#rezervare2, div#rezervare3 {
+                padding: 10px;
+                background-color: chartreuse;
+                border-top: 1px solid snow;
+                }
+            
+            div.form-group {
+                span.perioade {
+                    display: inline-block;
+                    padding: 10px;
+                    }
+                }  
+            }
+        
+            div#rezervare2, div#rezervare3 {
+                display: none;
+            }
+    
+            button {
+                margin-top: 20px;;
+            }
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section.section-rezervare {
+        form {
+            font-size: 15px;
+
+            div {
+                &.form-group {
+                    input[type="text"] {
+                        width: 95%;
+                        font-size: 10px;
+                        padding: 5px 0;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+main.page-rezervari {
+    article {
+        section.section-rezervare {
+            form {
+                div.col-sm-6 {
+                    label {
+                        padding-right: 7%;
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+main.page-rezervari {
+    section.section-rezervare {
+        form {
+            div {
+                &.form-group {
+                    input[type="text"] {
+                        width: 85%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$font__main: 'Lato', sans-serif;
+$font__second: 'Montserrat';
+$font__code: "Monaco", "Consolas", "Andale Mono", "DejaVu Sans Mono", monospace;
+$color__darker: #e6e7e8;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$color__green: #8bb661;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+body {
+    font-family: $font__second;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font__main;
+}
+
+a, p, span, ul, div {
+    font-family: $font__second;
+}
+
+img {
+    max-width: 100% !important;
+    //height: auto !important;
+}

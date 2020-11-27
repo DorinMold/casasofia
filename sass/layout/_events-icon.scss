@@ -1,0 +1,44 @@
+form#contactForm {
+    div.rowSubmit {
+        button#send_form {
+            float: left;
+            margin-left: 20px;
+        }
+        a.link-reset {
+            font-size: 15px;
+            float: left;
+            color: darkorange;
+            margin-left: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form#contactForm {
+        div.rowSubmit {
+            button#send_form {
+                margin-left: 10px;
+                font-size: 17px
+            }
+            a.link-reset {
+                font-size: 14px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    form#contactForm {
+        div.rowSubmit {
+            button#send_form {
+                margin-left: 10px;
+                font-size: 14px
+            }
+            a.link-reset {
+                font-size: 10px;
+                margin-left: 15px;
+            }
+        }
+    }
+}

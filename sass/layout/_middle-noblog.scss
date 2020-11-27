@@ -1,0 +1,137 @@
+article.post-detail {
+    div.block-list {
+        display: flex;
+        position: relative;
+        padding: 45px 0 0;
+        div.block-item {
+           position: relative;
+           flex-grow: 1;
+           flex-basis: 0;
+        //    background-color: #fff;
+        background-image: url('assets/poze/background/papyrus.png');
+           -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+           box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+           width: 300px;
+           margin: 0 20px 70px 0;
+          
+           p.shadow-p {
+               height: 70px;
+           }
+
+           .block-aside {
+                overflow: hidden;
+                padding: 20px 20px 0;
+                font-size: 15px;
+
+            ul {
+                margin: 3em 0 1.5em 1.5em;
+                li {
+                    line-height: 2em;
+                    color: #182c61;
+                }
+            }
+
+            p {
+                color: #182c61;
+            }
+
+            h3 {
+                color: #807b53;
+                font-size: 20px;
+                font-weight: normal;
+                margin-bottom: 20px;
+                text-align: center;
+                color: darkorange;
+                }
+           }
+
+           div.block-meta {
+                padding: 20px;
+                text-align: center;
+                border-top: 1px solid #eceeef;
+                background: beige;
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                a {
+                    color: black;
+                    &:hover {
+                        color: crimson!important;
+                    }
+                }
+            }
+           
+
+           div.block-image {
+               position: relative;
+               img {
+                    min-width: 100% !important;
+                    height: auto !important;
+               }
+           }
+           div.block-caption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 50%;
+                padding-top: 15%;
+                width: 100%;
+                text-align: center;
+                h2 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 21px;
+                    font-weight: bold;
+                    padding: 6%;
+                    background-color: rgba(0,0,0,0.7);
+                }
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    article.post-detail {
+        div.block-list {
+            div.block-item {
+                div.block-aside {
+                    ul {
+                        margin: 0 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    article.post-detail {
+        div.block-list {
+            display: block;
+            div.block-item {
+                width: 400px;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    div.middle.noblog {
+        div.container {
+            margin: 0!important;
+            padding: 0!important;
+            article.post-detail {
+                div.block-list {
+                    display: block;
+                    div.block-item {
+                        width: 100%;
+                        margin: 20px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
